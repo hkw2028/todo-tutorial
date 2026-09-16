@@ -7,6 +7,15 @@
 - 강의 본문: https://docs.claude-hunt.com
 - 수강생 결과물 공유: https://claude-hunt.com
 
+## 주요 기능
+
+- 할 일 추가 시 우선순위(높음/보통/낮음), 마감일, 카테고리(업무/개인/쇼핑)를 함께 지정
+- 완료 토글, 삭제, 제목 인라인 편집 (빈 값으로 저장하면 삭제 처리)
+- 제목 검색, 상태별 필터(전체/진행중/완료), 카테고리별 필터
+- 생성일순 / 이름순 / 마감일순 정렬
+- 목록은 `localStorage`에 저장되어 새로고침 후에도 유지
+- `d` 키로 다크 모드 전환
+
 ## 기술 스택
 
 - Next.js 16 (App Router, Turbopack)
@@ -34,6 +43,8 @@ bun run start      # 빌드 결과 실행
 bun run lint       # ESLint
 bun run typecheck  # tsc --noEmit
 bun run format     # Prettier 포맷팅
+bun run test       # Vitest 1회 실행
+bun run test:watch # Vitest watch 모드
 ```
 
 ## 챕터별 시작 브랜치
