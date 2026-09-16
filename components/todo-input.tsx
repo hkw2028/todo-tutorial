@@ -117,7 +117,10 @@ export function TodoInput({ onAdd }: TodoInputProps) {
         </CardContent>
 
         <CardFooter>
-          <Button type="submit" className="w-full">
+          <Button
+            type="submit"
+            className="w-full bg-red-600 text-white hover:bg-red-700"
+          >
             추가
           </Button>
         </CardFooter>
